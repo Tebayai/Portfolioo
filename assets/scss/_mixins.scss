@@ -1,0 +1,23 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin hover-color($color: $orange-txt) {
+    &:hover {
+        color: $color;
+    }
+}
+
+@mixin mobile-only {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin tablet-up {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}

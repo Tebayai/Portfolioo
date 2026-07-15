@@ -1,0 +1,82 @@
+// Animations
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: $font-main;
+}
+
+body {
+    background-color: $primary-color;
+}
+
+section {
+    margin: 3rem 1.5rem;
+
+    @media(min-width: 1200px) {
+        max-width: 1200px;
+        margin: 3rem auto;
+    }
+}
+
+hr {
+    border: 1px solid $border-color;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-main;
+    padding: .8rem 1.5rem;
+    background: #111110;
+    color: white;
+    border-radius: 999rem;
+    font-size: 14px;
+    gap: .5rem;
+}
+
+.border-btn {
+    border: 1px solid $text-color;
+    background: none;
+    color: black;
+    @include hover-color;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.orange-color {
+    color: $orange-txt;
+}
