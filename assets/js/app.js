@@ -31,3 +31,38 @@ document.querySelectorAll('.nav-links li a').forEach(link => {
         icon.classList.add('fa-bars');
     });
 });
+
+const typing = document.querySelector('.typing');
+const text = ["Développeur frontend", "UI/UX designer"];
+
+let index = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function type() {
+    const currentText = text[index];
+    
+    if (isDeleting) {
+        charIndex--;
+    } else {
+        charIndex++;
+    }
+
+    typing.textContent = currentText.substring(0, charIndex);
+
+    if (!isDeleting && charIndex === currentText.length) {
+        // Texte complètement écrit, pause avant suppression
+        isDeleting = true;
+        setTimeout(type, 1800);
+    } else if (isDeleting && charIndex === 0) {
+        // Texte complètement supprimé, passage au suivant
+        isDeleting = false;
+        index = (index + 1) % text.length;
+        setTimeout(type, 1000);
+    } else {
+        // Continue à taper ou supprimer
+        setTimeout(type, isDeleting ? 30 : 100);
+    }
+}
+
+type();

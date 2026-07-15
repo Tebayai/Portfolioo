@@ -25,19 +25,30 @@
     <main>
         <section class="hero-section"id="accueil">
             <div class="hero-content">
-                <p><span class="point"></span> Displonible </p>
-                <h2>Yvann Erick <br> Guillard</h2>
-                <span>Je suis ...</span>
+                <div class="dots-span">
+                    <span class="dot"></span> 
+                    <p class="dots-txt">DISPLONIBLE POUR MISSIONS</p>
+                </div>
+
+                <h2>Yvann Erick <br> <span class="orange-color">Guillard</span></h2>
+                <div class="typing-container">
+                    <span class="typing"></span>
+                    <span class="cursor"></span>
+                </div>
                 <p>Développeur frontend & UI/UX designer junior. Je conçois des interfaces rapides, accessibles et soignées au pixel près. Entre <code/> et coups de crayon.</p>
-                <a href="#projets" class="btn"><i class="fas fa-arrow-right"></i>Voir mes projets</a>
-                <a href="assets/files/CV.pdf" class="btn" download><i class="fas fa-download"></i>Télécharger mon CV</a>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn">Voir mes projets<i class="fas fa-arrow-right"></i></a>
+                    <a href="assets/files/CV.pdf" class="btn border-btn" download><i class="fas fa-download"></i>Télécharger CV</a>
+                </div>
             </div>
             <div class="hero-scroll">
-                <p>---------- SCROLL </p>
+                <p>----- SCROLL </p>
             </div>
         </section>
 
-        <section class="about-section">
+        <hr>
+
+        <section class="about-section .lobal-margin">
             <span class="subtitle">01 - À propos</span>
             <h2>Code & <br> <span class="orange-color">créativité</span></h2>
             <p>Je suis développeur frontend junior avec un œil de designer. J'aime construire des interfaces qui se sentent aussi bien qu'elles se voient — pixel-perfect, accessibles et fluides. Issu d'un background UI/UX, je fais le pont entre l'intention de design et le produit livré. Quand je ne code pas, je prototype dans Figma, j'explore le motion design, ou j'apprends un nouvel outil à ajouter à ma boîte à outils.</p>
@@ -45,7 +56,7 @@
             <p>// 99 little bugs in the code...</p>
         </section>
 
-        <section class="projects-section" id="projets">
+        <section class="projects-section global-margin" id="projets">
             <span class="subtitle">02 - Projets</span>
             <h2>Mes projets <br> <span class="orange-color">réalisés</span></h2>
             <div class="projects-container">
@@ -63,7 +74,7 @@
             </div>
         </section>
 
-        <section class="stack-section">
+        <section class="stack-section global-margin">
             <span class="subtitle">03 - Stack</span>
             <h2>Compétences & <br> <span class="orange-color">outils</span></h2>
             <div class="npm">
@@ -109,7 +120,7 @@
             </div>
         </section>
 
-        <section class="contact-section">
+        <section class="contact-section global-margin" id="contact">
             <div class="contact-container">
                 <span class="subtitle">04 - Contact</span>
                 <h2>Construisons  <br> <span class="orange-color">ensemble.</span></h2>
