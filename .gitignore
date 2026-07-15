@@ -1,0 +1,33 @@
+# Dépendances
+node_modules/
+
+# Fichiers compilés
+*.css
+*.css.map
+dist/
+build/
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environnement
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers temporaires
+*.tmp
+.cache/
+
+# OS
+Thumbs.db

@@ -1,0 +1,104 @@
+// Variables
+$background-color: #f4f4f4;
+$border-color: #ddd;
+$orange-txt: #ff4f1f;
+$primary-color: #f5f4f0;
+$secondary-color: #666;
+$text-color: #333;
+
+
+//font-family
+$font-title: 'Bricolage Grotesque', sans-serif;
+$font-main: 'Figtree', sans-serif;
+$font-submain: 'JetBrains Mono', monospace;
+
+//animation
+$transition: all 0.3s ease;
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* @mixin button-style {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: $transition;
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+} */
+
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $primary-color;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.orange-color {
+    color: $orange-txt;
+}
+
+// Header & Navigation
+header {
+    background-color: $primary-color;
+    font-family: $font-submain;
+    font-size: 16px;
+    padding: 1rem 2rem;
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1{
+            font-size: 16px;
+        }
+
+        .burger-menu {
+            font-size: 1.5rem;
+            background: none;
+        }
+
+        .nav-links {
+            display: none;
+        }
+    }
+
+}
