@@ -3,6 +3,8 @@ $background-color: #f4f4f4;
 $border-color: #ddd;
 $orange-txt: #ff4f1f;
 $primary-color: #f5f4f0;
+$color-text-muted:  #6f767e;
+$color-bg-alt: #14191F;
 $text-color: #7a7870;
 
 // Font families
@@ -16,3 +18,9 @@ $transition-menu: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
 
 // Breakpoints
 $tablet: 768px;
+
+//font sizes
+$font-size-sm: 1.4rem;
+$font-size-md: 1.6rem;
+$font-size-lg: 2rem;
+$font-size-xl: 2.4rem;

@@ -8,6 +8,25 @@
     }
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section, .project-item, .stack-content {
+    opacity: 0;
+}
+
+.fade-in {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
 // Reset
 * {
     margin: 0;

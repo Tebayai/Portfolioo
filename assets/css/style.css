@@ -7,6 +7,24 @@
     opacity: 0;
   }
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+section, .project-item, .stack-content {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -227,7 +245,7 @@ header nav .nav-links li a:hover {
 }
 
 .hero-section .hero-content {
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -283,7 +301,38 @@ header nav .nav-links li a:hover {
 }
 .hero-section .hero-scroll {
   color: #7a7870;
-  padding: 4rem 0;
+  padding: 2rem 0;
+}
+.hero-section .hero_stack {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.hero-section .hero_stack .hero_stack_icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero-section .hero_stack .hero_stack_icons i {
+  background: #14191F;
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #ddd;
+  color: #7a7870;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .hero-section .hero_stack {
+    margin-top: 2rem;
+  }
 }
 
 .about-section {

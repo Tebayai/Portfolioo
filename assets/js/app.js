@@ -76,3 +76,23 @@ window.addEventListener('scroll', function(){
         header.classList.remove('scrolled');
     }
 })
+
+// Intersection Observer pour animations au scroll
+const observerOptions = {
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Observer les sections, projets et autres éléments
+document.querySelectorAll('section, .project-item, .stack-content').forEach(el => {
+    observer.observe(el);
+});
