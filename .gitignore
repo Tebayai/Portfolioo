@@ -1,8 +1,7 @@
 # Dépendances
 node_modules/
 
-# Fichiers compilés
-*.css
+# Fichiers compilés (sauf CSS qui doit être versionné)
 *.css.map
 dist/
 build/

@@ -1,4 +1,170 @@
 // Projects section styles
 .projects-section {
-    // Add your projects section styles here
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+
+    }
+
+    // Project Item
+    .project-item {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $border-color;
+
+        .projet-title {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+
+            h3 {
+                font-family: $font-title;
+                font-size: 1.5rem;
+                color: black;
+                font-weight: 600;
+            }
+
+            p,
+            .subtitle {
+                font-size: 14px;
+                color: $text-color;
+                line-height: 1.6;
+            }
+
+            .labels-container {
+                display: flex;
+                gap: 0.5rem;
+                flex-wrap: wrap;
+            }
+
+            .labels-use {
+                font-size: 12px;
+                padding: 4px 10px;
+                background-color: #f0f0f0;
+                border-radius: 20px;
+                color: $text-color;
+                font-family: $font-submain;
+            }
+        }
+    }
+
+    // Browser Window Style (Mac)
+    .browser-window {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        transition: $transition;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+        }
+
+        // Browser Header
+        .browser-header {
+            background: linear-gradient(135deg, #f5f5f5 0%, #ececec 100%);
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        // Browser Buttons (Mac style)
+        .browser-buttons {
+            display: flex;
+            gap: 8px;
+
+            span {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: transform 0.2s ease;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+
+            .btn-red {
+                background-color: #ff5f56;
+            }
+
+            .btn-yellow {
+                background-color: #ffbd2e;
+            }
+
+            .btn-green {
+                background-color: #27c93f;
+            }
+        }
+
+        // Browser URL
+        .browser-url {
+            flex: 1;
+            text-align: center;
+            font-size: 12px;
+            color: $text-color;
+            font-family: $font-submain;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background: white;
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin-left: auto;
+        }
+
+        // Browser Content
+        .browser-content {
+            background: white;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            flex: 1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+
+        // Coming Soon Message
+        .coming-soon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            text-align: center;
+            padding: 2rem;
+
+            p {
+                font-size: 18px;
+                color: $text-color;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+
+    }
 }
