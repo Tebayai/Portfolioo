@@ -48,6 +48,11 @@ hr {
     border-radius: 999rem;
     font-size: 14px;
     gap: .5rem;
+
+    &:hover{
+        background: $orange-txt;
+        color: white;
+    }
 }
 
 .border-btn {
@@ -75,6 +80,13 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+h2{
+    font-family: $font-title;
+    font-size: 2rem;
+    line-height: 1;
+    color: black;
 }
 
 .orange-color {

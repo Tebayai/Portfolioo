@@ -1,0 +1,39 @@
+.contact-section{
+    background: #111110;
+    border-radius: 20px;
+    color: white;
+    padding: 3rem 1.5rem;
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .subtitle,
+        p{
+            color: #f5f4f080;
+        }
+
+        h2{
+            color: white;
+        }
+
+        .btn-orange{
+            background: $orange-txt;
+            color: white;
+        }
+
+        .social-links{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #f5f4f080;
+
+            a{
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -3,6 +3,9 @@ header {
     font-family: $font-submain;
     font-size: 16px;
     padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 
     nav {
         display: flex;
@@ -86,4 +89,11 @@ header {
             }
         }
     }
+}
+
+.scrolled {
+    background-color: rgba(245, 244, 240, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid $border-color;
 }

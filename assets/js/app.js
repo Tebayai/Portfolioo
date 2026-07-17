@@ -1,6 +1,7 @@
 // Sélectionner les éléments du DOM
 const burgerBtn = document.getElementById('burger-btn');
 const navLinks = document.getElementById('nav-links');
+const header = document.querySelector('header');
 
 // Ajouter un event listener au clic du burger
 burgerBtn.addEventListener('click', function() {
@@ -66,3 +67,12 @@ function type() {
 }
 
 type();
+
+//background header on scroll
+window.addEventListener('scroll', function(){
+    if(window.scrollY > 50){
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+})

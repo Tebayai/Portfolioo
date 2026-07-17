@@ -7,6 +7,8 @@
 @mixin hover-color($color: $orange-txt) {
     &:hover {
         color: $color;
+        background: $primary-color;
+        border-color: $orange-txt;
     }
 }
 

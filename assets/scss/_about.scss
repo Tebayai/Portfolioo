@@ -1,4 +1,11 @@
 // About section styles
 .about-section {
-    // Add your about section styles here
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    p{
+        color: $text-color;
+        margin-top: 2rem;
+    }
 }
