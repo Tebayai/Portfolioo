@@ -2,7 +2,6 @@
 node_modules/
 
 # Fichiers compilés (sauf CSS qui doit être versionné)
-*.css.map
 dist/
 build/
 
