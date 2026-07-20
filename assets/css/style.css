@@ -296,7 +296,7 @@ header nav .nav-links .hide {
 }
 @media (min-width: 1024px) {
   header {
-    padding: 1rem 6rem;
+    padding: 1rem 0rem;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -414,8 +414,93 @@ header nav .nav-links .hide {
   }
 }
 @media (min-width: 1024px) {
-  .hero-section .hero-content .hero-right {
+  .hero-section .hero-content .hero-right .hero_stack {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    width: 350px;
+    gap: 1.5rem;
+    margin-top: 0;
+  }
+  .hero-section .hero-content .hero-right .hero_stack .hero-profile-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .hero-section .hero-content .hero-right .hero_stack .hero-profile-header .role {
+    font-size: 0.875rem;
+    color: #7a7870;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .hero-section .hero-content .hero-right .hero_stack .hero-profile-header h3 {
+    font-size: 1.5rem;
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: #7a7870;
+    margin: 0;
+  }
+  .hero-section .hero-content .hero-right .hero_stack .hero-profile-header .subtitle-role {
+    font-size: 0.95rem;
+    color: #7a7870;
+  }
+  .hero-section .hero-content .hero-right .hero_stack .hero-profile-header hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0.5rem 0;
+  }
+  .hero-section .hero-content .hero-right .hero_stack .hero-stack-label {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero-section .hero-content .hero-right .hero_stack .hero-stack-label .stack-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .hero-section .hero-content .hero-right .hero_stack .hero-stack-label .stack-group .group-title {
+    font-size: 0.875rem;
+    color: #7a7870;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .hero-section .hero-content .hero-right .hero_stack .hero-stack-label .stack-group .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .hero-section .hero-content .hero-right .hero_stack .hero-stack-label .stack-group .badges span {
+    background: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    border: 1px solid #ddd;
+  }
+  .hero-section .hero-content .hero-right .hero_stack .disponible {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: rgba(255, 79, 31, 0.1);
+    border-radius: 0.8rem;
+    font-size: 0.95rem;
+  }
+  .hero-section .hero-content .hero-right .hero_stack .disponible .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #ff4f1f;
+    border-radius: 50%;
+    display: inline-block;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-section .hero-content .hero-right {
+    align-items: flex-start;
+    justify-content: flex-end;
   }
 }
 @media (min-width: 1024px) {
