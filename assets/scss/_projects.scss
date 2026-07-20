@@ -5,7 +5,10 @@
         flex-direction: column;
         gap: 2rem;
         margin-top: 2rem;
+    }
 
+    h2{
+        margin-top: 1.5rem;
     }
 
     // Project Item
@@ -15,6 +18,10 @@
         gap: 1rem;
         padding-bottom: 2rem;
         border-bottom: 1px solid $border-color;
+
+        &:last-child {
+            border-bottom: none;
+        }
 
         .projet-title {
             display: flex;
@@ -49,6 +56,15 @@
                 color: $text-color;
                 font-family: $font-submain;
             }
+
+            @include tablet-up {
+                width: 50%;
+            }
+        }
+
+        @include tablet-up {
+            flex-direction: row;
+            gap: 2rem;
         }
     }
 
@@ -166,5 +182,9 @@
             }
         }
 
+
+        @include tablet-up {
+            width: 100%;
+        }
     }
 }

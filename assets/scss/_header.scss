@@ -68,15 +68,24 @@ header {
                 pointer-events: auto;
             }
 
-            li a {
+            li .a {
                 color: $text-color;
                 transition: $transition;
 
                 @include hover-color;
             }
 
+            .hide{
+                display: none;
+
+                @include tablet-up {
+                    display: block;
+                }
+            }
+
             @include tablet-up {
                 position: static;
+                align-items: center;
                 flex-direction: row;
                 opacity: 1;
                 visibility: visible;
@@ -88,6 +97,16 @@ header {
                 gap: 2rem;
             }
         }
+    }
+
+    @include tablet-up {
+        padding: 1rem 4rem;
+    }
+
+    @include desktop-up {
+        padding: 1rem 6rem;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
 

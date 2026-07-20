@@ -46,6 +46,10 @@ body {
 section{
     margin: 3rem 1.5rem;
 
+    @include tablet-up {
+        margin: 3rem 4rem;
+    }
+
     @media(min-width: 1200px) {
         max-width: 1200px;
         margin: 3rem auto;
@@ -67,6 +71,7 @@ hr {
     border-radius: 999rem;
     font-size: 14px;
     gap: .5rem;
+    width: fit-content;
 
     &:hover{
         background: $orange-txt;
@@ -106,8 +111,16 @@ h2{
     font-size: 2rem;
     line-height: 1;
     color: black;
+
+    @include tablet-up {
+        font-size: 3rem;
+    }
 }
 
 .orange-color {
     color: $orange-txt;
+}
+
+.width-full{
+    width: 100%;
 }

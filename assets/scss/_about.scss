@@ -7,5 +7,9 @@
     p{
         color: $text-color;
         margin-top: 2rem;
+
+        @include tablet-up {
+            margin-top: 0;
+        }
     }
 }

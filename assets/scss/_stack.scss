@@ -14,44 +14,57 @@
         gap: 0.5rem;
     }
 
-    .stack-content{
-        background-color: white;
-        padding: 1rem;
-        border-radius: 10px;
-        border: 1px solid $border-color;
-        margin-bottom: 1rem;
+    .stack-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
 
-        .stack-title{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .stack-content{
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid $border-color;
             margin-bottom: 1rem;
-            h3{
-                font-family: $font-title;
-                font-size: 1rem;
-                color: $text-color;
-                text-transform: uppercase;
+            width: 100%;
+
+            .stack-title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1rem;
+                h3{
+                    font-family: $font-title;
+                    font-size: 1rem;
+                    color: $text-color;
+                    text-transform: uppercase;
+                }
+
+                .dot{
+                    width: .5rem;
+                    height: .5rem;
+                    background-color: $orange-txt;
+                    border-radius: 50%;
+                    display: inline-block;
+                    margin-right: 0.5rem;
+                }
             }
 
-            .dot{
-                width: .5rem;
-                height: .5rem;
-                background-color: $orange-txt;
-                border-radius: 50%;
-                display: inline-block;
-                margin-right: 0.5rem;
+            .stack-label{
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;
+                p{
+                    font-family: $font-submain;
+                    font-size: .8rem;
+                    color: $text-color;
+                }
             }
         }
 
-        .stack-label{
-            display: flex;
-            flex-direction: column;
-            gap: 0.3rem;
-            p{
-                font-family: $font-submain;
-                font-size: .8rem;
-                color: $text-color;
-            }
+        @include desktop-up {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 2rem;
         }
     }
 }
