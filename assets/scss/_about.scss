@@ -2,7 +2,27 @@
 .about-section {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+
+    .about-left{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        @include desktop-up{
+            width: 50%;
+        }
+    }
+
+    .about-right{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        @include desktop-up{
+            width: 50%;
+        }
+    }
 
     p{
         color: $text-color;
@@ -11,5 +31,11 @@
         @include tablet-up {
             margin-top: 0;
         }
+    }
+
+    @include desktop-up {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
     }
 }
