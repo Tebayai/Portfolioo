@@ -78,9 +78,10 @@
 
         .hero-right{
             display: flex;
+            align-items: center;
+
             .hero_stack{
                 display: flex;
-                align-items: center;
                 flex-direction: column;
                 gap: .5rem;
 
@@ -114,16 +115,13 @@
                     background: white;
                     border: 1px solid $border-color;
                     border-radius: 1.5rem;
-                    padding: 2rem;
+                    padding: 2rem 1rem;
                     width: 350px;
-                    gap: 1.5rem;
                     margin-top: 0;
 
                     .hero-profile-header {
                         display: flex;
                         flex-direction: column;
-                        gap: 1rem;
-                        text-align: center;
 
                         .role {
                             font-size: 0.875rem;
@@ -204,11 +202,6 @@
                         }
                     }
                 }
-            }
-
-            @include desktop-up{
-                align-items: flex-start;
-                justify-content: flex-end;
             }
         }
 
