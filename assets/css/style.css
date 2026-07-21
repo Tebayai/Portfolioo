@@ -42,6 +42,7 @@ body {
 
 section {
   margin: 3rem 1.5rem;
+  scroll-margin-top: 124px;
 }
 @media (min-width: 768px) {
   section {
@@ -303,9 +304,9 @@ header nav .nav-links .hide {
     padding: 1rem 4rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   header {
-    padding: 1rem 0rem;
+    padding: 1rem 0;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -424,8 +425,7 @@ header nav .nav-links .hide {
 }
 @media (min-width: 1024px) {
   .hero-section .hero-content .hero-right .hero_stack {
-    background: white;
-    border: 1px solid #ddd;
+    border: 1px solid #ff4f1f;
     border-radius: 1.5rem;
     padding: 2rem 1rem;
     width: 350px;

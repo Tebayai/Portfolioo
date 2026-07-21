@@ -45,6 +45,7 @@ body {
 
 section{
     margin: 3rem 1.5rem;
+    scroll-margin-top: 124px;
 
     @include tablet-up {
         margin: 3rem 4rem;
