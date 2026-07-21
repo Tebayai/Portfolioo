@@ -8,10 +8,15 @@
     "sass:watch": "sass --watch assets/scss:assets/css",
     "dev": "sass --watch assets/scss:assets/css"
   },
-  "keywords": ["portfolio"],
+  "keywords": [
+    "portfolio"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "sass": "1.50.1"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1"
   }
 }

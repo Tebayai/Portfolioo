@@ -17,6 +17,7 @@ build/
 .env
 .env.local
 .env.*.local
+assets/js/config.js
 
 # Logs
 npm-debug.log*

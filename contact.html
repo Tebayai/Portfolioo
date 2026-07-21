@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Yvann Erick Guillard - Développeur Frontend & UI/UX Designer">
+    <meta name="keywords" content="contact, développeur frontend, devis">
+    <meta name="author" content="Yvann Erick Guillard">
+    <title>Contact - Yvann Erick Guillard</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%23ff4f1f'>Y</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="assets/js/contact-form.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html" style="text-decoration: none; color: inherit;">tebayai<span class="orange-color">.</span></a></h1>
+            <button class="burger-menu" id="burger-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#accueil" class="a">Accueil</a></li>
+                <li><a href="index.html#projets" class="a">Projets</a></li>
+                <li><a href="index.html#stack" class="a">Stack</a></li>
+                <li><a href="mailto:yvannerick.pro@gmail.com" class="btn hide">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-page-section">
+            <div class="contact-page-container">
+                <div class="contact-page-header">
+                    <h1>Me Contacter</h1>
+                    <p>Vous avez une idée ? Un projet à développer ? Je serais ravi de vous aider.</p>
+                </div>
+
+                <div class="contact-page-content">
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form">
+                            <input type="hidden" name="time" value="">
+                            
+                            <div class="form-group">
+                                <label for="name">Votre nom *</label>
+                                <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Votre email *</label>
+                                <input type="email" id="email" name="email" placeholder="jean@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="title">Sujet *</label>
+                                <input type="text" id="title" name="title" placeholder="Développement d'un site web" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Votre message *</label>
+                                <textarea id="message" name="message" placeholder="Décrivez votre projet..." rows="6" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-orange width-full">
+                                <i class="fas fa-paper-plane"></i> Envoyer le message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Autres moyens de me contacter</h3>
+                        <div class="contact-methods">
+                            <a href="mailto:yvannerick.pro@gmail.com" class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <span>yvannerick.pro@gmail.com</span>
+                            </a>
+                            <a href="https://github.com/Tebayai" target="_blank" class="contact-method">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yvann-erick-guillard-683b73285/" target="_blank" class="contact-method">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tebayai. Tous droits réservés.</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
