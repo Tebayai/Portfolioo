@@ -681,8 +681,8 @@ header nav .nav-links .hide {
 .projects-section .browser-window .browser-content {
   background: white;
   min-height: 250px;
+  max-height: 500px;
   display: flex;
-  align-items: center;
   justify-content: center;
   overflow: hidden;
   flex: 1;
@@ -691,7 +691,13 @@ header nav .nav-links .hide {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   display: block;
+}
+@media (min-width: 426px) {
+  .projects-section .browser-window .browser-content {
+    align-items: center;
+  }
 }
 .projects-section .browser-window .coming-soon {
   display: flex;
