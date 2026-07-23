@@ -57,6 +57,28 @@
                 font-family: $font-submain;
             }
 
+            .project-link {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-size: 14px;
+                color: $primary-color;
+                font-weight: 600;
+                text-decoration: none;
+                margin-top: 0.5rem;
+                transition: $transition;
+
+                i {
+                    transition: $transition;
+                }
+
+                &:hover {
+                    i {
+                        transform: translateX(4px);
+                    }
+                }
+            }
+
             @include tablet-up {
                 width: 50%;
             }
@@ -66,6 +88,13 @@
             flex-direction: row;
             gap: 2rem;
         }
+    }
+
+    .project-item-page{
+        background: white;
+        padding: 2rem;
+        border: 1px solid #e5e5e5;
+        border-radius: 8px;
     }
 
     // Browser Window Style (Mac)
@@ -165,6 +194,11 @@
             @media(min-width: 426px){
                 align-items: center;
             }
+
+            @include tablet-up {
+                min-height: 200px;
+                max-height: 250px;
+            }
         }
 
         // Coming Soon Message
@@ -190,7 +224,7 @@
 
 
         @include tablet-up {
-            width: 100%;
+            width: 70%;
         }
     }
 }

@@ -824,6 +824,23 @@ header nav .nav-links .hide {
   color: #7a7870;
   font-family: "JetBrains Mono", monospace;
 }
+.projects-section .project-item .projet-title .project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  color: #f5f4f0;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+.projects-section .project-item .projet-title .project-link i {
+  transition: all 0.3s ease;
+}
+.projects-section .project-item .projet-title .project-link:hover i {
+  transform: translateX(4px);
+}
 @media (min-width: 768px) {
   .projects-section .project-item .projet-title {
     width: 50%;
@@ -834,6 +851,12 @@ header nav .nav-links .hide {
     flex-direction: row;
     gap: 2rem;
   }
+}
+.projects-section .project-item-page {
+  background: white;
+  padding: 2rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
 }
 .projects-section .browser-window {
   background: white;
@@ -918,6 +941,12 @@ header nav .nav-links .hide {
     align-items: center;
   }
 }
+@media (min-width: 768px) {
+  .projects-section .browser-window .browser-content {
+    min-height: 200px;
+    max-height: 250px;
+  }
+}
 .projects-section .browser-window .coming-soon {
   display: flex;
   flex-direction: column;
@@ -937,7 +966,7 @@ header nav .nav-links .hide {
 }
 @media (min-width: 768px) {
   .projects-section .browser-window {
-    width: 100%;
+    width: 70%;
   }
 }
 
