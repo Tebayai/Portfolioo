@@ -130,6 +130,21 @@ img {
     display: block;
 }
 
+h1{
+    font-family: $font-title;
+    font-size: 2rem;
+    line-height: 1;
+    color: black;
+
+    @include tablet-up {
+        font-size: 3rem;
+    }
+
+    @include desktop-up {
+        font-size: 5rem;
+    }
+}
+
 h2{
     font-family: $font-title;
     font-size: 2rem;

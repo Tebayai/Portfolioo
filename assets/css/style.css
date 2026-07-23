@@ -130,6 +130,23 @@ img {
   display: block;
 }
 
+h1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+  color: black;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
 h2 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 2rem;
@@ -404,8 +421,8 @@ header nav {
   align-items: center;
   justify-content: space-between;
 }
-header nav h1 {
-  font-size: 16px;
+header nav .logo {
+  font-size: 18px;
 }
 header nav .burger-menu {
   font-size: 1.5rem;
@@ -543,12 +560,6 @@ header nav .nav-links .hide {
   border-radius: 50%;
   display: inline-block;
   margin-right: 0.5rem;
-}
-.hero-section .hero-content .hero-left h2 {
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 3rem;
-  line-height: 1;
-  color: black;
 }
 .hero-section .hero-content .hero-left .typing {
   font-family: "JetBrains Mono", monospace;
