@@ -246,9 +246,19 @@
 }
 
 // Pour les maquettes sur la page projets
-.projects-section[data-tab-content="maquette"] .browser-window {
-    @include tablet-up {
-        width: auto;
-        max-width: 350px;
+.projects-section[data-tab-content="maquette"] {
+    .project-item {
+        @include tablet-up {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+    }
+    
+    .browser-window {
+        @include tablet-up {
+            width: auto;
+            max-width: 350px;
+        }
     }
 }

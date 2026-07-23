@@ -990,6 +990,13 @@ header nav .nav-links .hide {
 }
 
 @media (min-width: 768px) {
+  .projects-section[data-tab-content=maquette] .project-item {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 768px) {
   .projects-section[data-tab-content=maquette] .browser-window {
     width: auto;
     max-width: 350px;
