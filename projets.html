@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les projets de Yvann Erick Guillard - Développeur Frontend & UI/UX Designer">
+    <meta name="keywords" content="projets, développeur frontend, UI/UX designer">
+    <meta name="author" content="Yvann Erick Guillard">
+    <title>Projets - Yvann Erick Guillard</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%23ff4f1f'>Y</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="assets/js/contact-form.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html" style="text-decoration: none; color: inherit;">tebayai<span class="orange-color">.</span></a></h1>
+            <button class="burger-menu" id="burger-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#accueil" class="a">Accueil</a></li>
+                <li><a href="index.html#projets" class="a">Projets</a></li>
+                <li><a href="index.html#stack" class="a">Stack</a></li>
+                <li><a href="mailto:yvannerick.pro@gmail.com" class="btn hide">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projets-page-section">
+            <span class="subtitle">02 - PROJETS</span>
+            <h2>Maquettes & <span class="orange-color">Projets web</span></h2>
+            <p>Du wireframe au produit livré - deux facettes d'un même processus créatif.</p>
+        </section>
+        <section class="choice-projets">
+            <div class="choice-btn" data-tab="maquette">
+                <i class="fa-solid fa-figma"></i>
+                <span>Maquettage</span>
+                <span class="number-projets" id="count-maquette">01</span>
+            </div>
+            <div class="choice-btn" data-tab="web">
+                <i class="fa-solid fa-code"></i>
+                <span>Projets Web</span>
+                <span class="number-projets" id="count-web">03</span>
+            </div>
+        </section>
+        <section class="projet-container" id="projet-container">
+            <!-- TAB MAQUETTES -->
+            <div class="projet-tab active" data-tab-content="maquette" id="maquette">
+                <div class="projet-item">
+                    <h3>Maquettes</h3>
+                    <p>Découvrez mes maquettes réalisées sur Figma, illustrant mon approche du design et de l'expérience utilisateur.</p>
+                </div>
+            </div>
+
+            <!-- TAB WEB PROJECTS -->
+            <div class="projet-tab" data-tab-content="web" id="web">
+                <div class="projects-container">
+                    <!-- Projet 1: Dashboard -->
+                    <div class="project-item">
+                        <div class="projet-title">
+                            <span class="subtitle">Concept</span>
+                            <h3>Dashboard</h3>
+                            <p>Visualisation de données pour un projet interne. Tableau de bord temps réel</p>
+                            <div class="labels-container">
+                                <span class="labels-use">Html</span>
+                                <span class="labels-use">css/sass</span>
+                                <span class="labels-use">php</span>
+                            </div>
+                        </div>
+                        <a href="#" class="browser-window dashboard-link" title="Dashboard">
+                            <div class="browser-header">
+                                <div class="browser-buttons">
+                                    <span class="btn-red"></span>
+                                    <span class="btn-yellow"></span>
+                                    <span class="btn-green"></span>
+                                </div>
+                                <div class="browser-url">Dashboard</div>
+                            </div>
+                            <div class="browser-content">
+                                <div class="coming-soon">
+                                    <p>En développement...</p>
+                                    <span class="orange-color">Bientôt disponible</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Projet 2: ExamFinal -->
+                    <div class="project-item">
+                        <div class="projet-title">
+                            <span class="subtitle">Auto école</span>
+                            <h3>Projet de fin d'études</h3>
+                            <p>Un projet réalisé de A à Z dans le cadre de mon BTS. en 2 jours avec elaboration du design du logo et conception du site</p>
+                            <div class="labels-container">
+                                <span class="labels-use">Html</span>
+                                <span class="labels-use">css</span>
+                                <span class="labels-use">js</span>
+                            </div>
+                        </div>
+                        <a href="https://tebayai.github.io/ExamFinalBTS/" target="_blank" class="browser-window" title="ExamFinal BTS">
+                            <div class="browser-header">
+                                <div class="browser-buttons">
+                                    <span class="btn-red"></span>
+                                    <span class="btn-yellow"></span>
+                                    <span class="btn-green"></span>
+                                </div>
+                                <div class="browser-url">https://tebayai.github.io/ExamFinalBTS/</div>
+                            </div>
+                            <div class="browser-content">
+                                <picture>
+                                    <source media="(max-width: 425px)" srcset="assets/img/btsMobile.png">
+                                    <img src="assets/img/ExamFinal.png" alt="ExamFinal BTS">
+                                </picture>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Projet 3: carNight -->
+                    <div class="project-item">
+                        <div class="projet-title">
+                            <span class="subtitle">CARNIGHT</span>
+                            <h3>Concept automobiles</h3>
+                            <p>Affichage concept pour le model audi R8</p>
+                            <div class="labels-container">
+                                <span class="labels-use">Html</span>
+                                <span class="labels-use">css</span>
+                                <span class="labels-use">js</span>
+                            </div>
+                        </div>
+                        <a href="https://tebayai.github.io/carNight/main.html" target="_blank" class="browser-window" title="carNight">
+                            <div class="browser-header">
+                                <div class="browser-buttons">
+                                    <span class="btn-red"></span>
+                                    <span class="btn-yellow"></span>
+                                    <span class="btn-green"></span>
+                                </div>
+                                <div class="browser-url">https://tebayai.github.io/carNight/main.html</div>
+                            </div>
+                            <div class="browser-content">
+                                <picture>
+                                    <source media="(max-width: 425px)" srcset="assets/img/carNightMobile.png">
+                                    <img src="assets/img/carNight.png" alt="carNight">
+                                </picture>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+                
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tebayai. Tous droits réservés.</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/projets-tabs.js"></script>
+</body>
+</html>

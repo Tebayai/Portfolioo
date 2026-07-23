@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.log('SUCCESS!', response.status, response.text);
                     
                     // Show success notification
-                    showNotification('✓ Message envoyé avec succès! Je vous répondrai bientôt.', 'success');
+                    showNotification('Message envoyé avec succès! Je vous répondrai bientôt.', 'success');
                     
                     // Reset form
                     contactForm.reset();
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.error('FAILED...', error);
                     
                     // Show error notification
-                    showNotification('✗ Erreur lors de l\'envoi. Veuillez réessayer ou m\'envoyer un email directement.', 'error');
+                    showNotification('Erreur lors de l\'envoi. Veuillez réessayer ou m\'envoyer un email directement.', 'error');
                     
                     // Reset button
                     submitBtn.disabled = false;

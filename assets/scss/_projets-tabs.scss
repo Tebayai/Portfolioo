@@ -1,0 +1,12 @@
+// Minimal tabs styling
+.projet-tab {
+    display: none;
+    
+    &.active {
+        display: block;
+    }
+}
+
+.choice-btn {
+    cursor: pointer;
+}

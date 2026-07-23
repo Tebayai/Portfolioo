@@ -41,6 +41,8 @@ let charIndex = 0;
 let isDeleting = false;
 
 function type() {
+    if (!typing) return; // Quitter si l'élément n'existe pas
+    
     const currentText = text[index];
     
     if (isDeleting) {
@@ -66,7 +68,9 @@ function type() {
     }
 }
 
-type();
+if (typing) {
+    type();
+}
 
 //background header on scroll
 window.addEventListener('scroll', function(){

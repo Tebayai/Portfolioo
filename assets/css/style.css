@@ -224,223 +224,170 @@ h2 {
   opacity: 1;
   animation: fadeInUp 0.8s ease-out forwards;
 }
-
-.contact-page-container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.contact-page-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.contact-page-header h1 {
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 2.5rem;
-  color: black;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-@media (min-width: 768px) {
-  .contact-page-header h1 {
-    font-size: 3rem;
-  }
-}
-.contact-page-header p {
-  font-size: 1.1rem;
-  color: #7a7870;
-  line-height: 1.8;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact-page-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 4rem;
-}
-@media (min-width: 768px) {
-  .contact-page-content {
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-  }
-}
-
-.contact-form-wrapper {
-  background: white;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-@media (min-width: 768px) {
-  .contact-form-wrapper {
-    padding: 3rem;
-  }
-}
-
-.contact-form {
+.contact-page-section .contact-page-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
-
-.form-group {
+.contact-page-section .contact-page-container .contact-page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-page-section .contact-page-container .contact-page-header .subtitle {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
+  color: #7a7870;
+  text-transform: uppercase;
+}
+.contact-page-section .contact-page-container .contact-page-header p {
+  color: #7a7870;
+}
+.contact-page-section .contact-page-container .contact-page-header .first-from-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.form-group label {
-  font-weight: 600;
-  color: black;
-  font-size: 0.95rem;
+@media (min-width: 768px) {
+  .contact-page-section .contact-page-container .contact-page-header .first-from-group {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
 }
-.form-group input,
-.form-group textarea {
-  padding: 0.875rem;
-  border: 1px solid #ddd;
-  border-radius: 0.75rem;
-  font-family: "Figtree", sans-serif;
-  font-size: 1rem;
-  color: black;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  background: white;
+.contact-page-section .contact-page-container .contact-page-header .form-group {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
-.form-group input::placeholder,
-.form-group textarea::placeholder {
+.contact-page-section .contact-page-container .contact-page-header .form-group label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
   color: #7a7870;
-  opacity: 0.6;
 }
-.form-group input:focus,
-.form-group textarea:focus {
+.contact-page-section .contact-page-container .contact-page-header .form-group input,
+.contact-page-section .contact-page-container .contact-page-header .form-group textarea {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
+  color: #7a7870;
+  align-items: center;
+  font-size: 0.7rem;
+}
+.contact-page-section .contact-page-container .contact-page-header .form-group input:focus,
+.contact-page-section .contact-page-container .contact-page-header .form-group textarea:focus {
   outline: none;
   border-color: #ff4f1f;
-  box-shadow: 0 0 0 3px rgba(255, 79, 31, 0.1);
 }
-.form-group textarea {
+.contact-page-section .contact-page-container .contact-page-header .form-group input::placeholder,
+.contact-page-section .contact-page-container .contact-page-header .form-group textarea::placeholder {
+  opacity: 0.5;
+}
+.contact-page-section .contact-page-container .contact-page-header .form-group textarea {
   resize: vertical;
-  min-height: 120px;
 }
-
-#form-message {
-  text-align: center;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  font-weight: 500;
-  display: none;
+.contact-page-section .contact-page-container .contact-page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
 }
-#form-message.success {
-  display: block;
-  background: rgba(39, 201, 63, 0.1);
-  color: #27c93f;
-  border: 1px solid rgba(39, 201, 63, 0.2);
-}
-#form-message.error {
-  display: block;
-  background: rgba(255, 95, 86, 0.1);
-  color: #ff5f56;
-  border: 1px solid rgba(255, 95, 86, 0.2);
-}
-
-.contact-info {
-  background: white;
-  border-radius: 1.5rem;
+.contact-page-section .contact-page-container .contact-page-content .contact-info {
+  background-color: white;
   padding: 2rem;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  height: fit-content;
+  border-radius: 10px;
+  border: 1px solid #ddd;
 }
-@media (min-width: 768px) {
-  .contact-info {
-    padding: 2.5rem;
-  }
+.contact-page-section .contact-page-container .contact-page-content .contact-info h3 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-bottom: 1rem;
 }
-.contact-info h3 {
-  font-size: 1.25rem;
-  color: black;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-}
-
-.contact-methods {
+.contact-page-section .contact-page-container .contact-page-content .contact-info .contact-methods {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
-.contact-method {
+.contact-page-section .contact-page-container .contact-page-content .contact-info .contact-methods .contact-method {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
+  color: #7a7870;
+}
+.contact-page-section .contact-page-container .contact-page-content .contact-info .contact-methods .contact-method:hover {
+  color: #ff4f1f;
+}
+.contact-page-section .contact-page-container .contact-page-content .contact-info .contact-methods .contact-method:hover i {
+  color: #ff4f1f;
+}
+.contact-page-section .contact-page-container .contact-page-content .contact-info .contact-methods i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.contact-page-section .contact-page-container .contact-page-content .contact-info .contact-methods .localisation {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  background: rgba(255, 79, 31, 0.05);
-  border: 1px solid rgba(255, 79, 31, 0.2);
-  text-decoration: none;
-  color: black;
-  transition: all 0.3s ease;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
 }
-.contact-method:hover {
-  background: rgba(255, 79, 31, 0.1);
-  border-color: #ff4f1f;
-  transform: translateX(5px);
+.contact-page-section .contact-page-container .contact-page-content .contact-info .contact-methods .localisation .sub-gray {
+  color: #7a7870;
 }
-.contact-method i {
-  font-size: 1.25rem;
-  color: #ff4f1f;
-  min-width: 24px;
-}
-.contact-method span {
-  font-weight: 500;
-}
-
-.width-full {
+.contact-page-section .contact-page-container .big-btn-portfolio {
+  display: flex;
+  justify-content: center;
   width: 100%;
+}
+.contact-page-section .contact-page-container .big-btn-portfolio .btn-contact {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 100%;
+}
+.contact-page-section .contact-page-container .big-btn-portfolio .btn-content {
+  display: flex;
+  align-items: center;
   gap: 0.5rem;
 }
-
-.notification {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 1rem 1.5rem;
-  border-radius: 0.75rem;
-  font-weight: 500;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
-  max-width: 350px;
-  word-wrap: break-word;
-  opacity: 0;
-  transform: translateX(400px);
-  transition: all 0.3s ease;
+.contact-page-section .contact-page-container .big-btn-portfolio .btn-content .sub-bold {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
 }
-.notification.show {
-  opacity: 1;
-  transform: translateX(0);
+.contact-page-section .contact-page-container .big-btn-portfolio .btn-content p {
+  color: #7a7870;
 }
-.notification.notification-success {
-  background: rgba(39, 201, 63, 0.95);
-  color: white;
-  border: 1px solid rgb(39, 201, 63);
+.contact-page-section .contact-page-container .big-btn-portfolio .btn-content i {
+  font-size: 1.3rem;
 }
-.notification.notification-error {
-  background: rgba(255, 95, 86, 0.95);
-  color: white;
-  border: 1px solid rgb(255, 95, 86);
-}
-@media (max-width: 480px) {
-  .notification {
-    max-width: calc(100% - 40px);
-    top: 10px;
-    right: 10px;
-    left: 10px;
+@media (min-width: 1024px) {
+  .contact-page-section .contact-page-container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70vh;
   }
 }
 
-.form-group {
-  margin-bottom: 1rem;
+.projet-tab {
+  display: none;
+}
+.projet-tab.active {
+  display: block;
+}
+
+.choice-btn {
+  cursor: pointer;
 }
 
 header {
