@@ -41,6 +41,7 @@
 }
 section, .project-item, .stack-content {
   opacity: 0;
+  transition: opacity 0.1s;
 }
 
 .fade-in {

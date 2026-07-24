@@ -44,6 +44,7 @@
 
 section, .project-item, .stack-content {
     opacity: 0;
+    transition: opacity 0.1s; // Évite le flash si JS est lent
 }
 
 .fade-in {
