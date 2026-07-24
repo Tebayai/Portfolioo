@@ -394,7 +394,7 @@ h2 {
   .contact-page-section .contact-page-container {
     flex-direction: row;
     justify-content: space-between;
-    height: 70vh;
+    height: 80vh;
   }
 }
 
@@ -1370,6 +1370,7 @@ header nav .nav-links .hide {
 }
 
 footer {
+  border-top: 1px solid #ddd;
   background-color: #f5f4f0;
   padding: 1rem;
   text-align: center;
