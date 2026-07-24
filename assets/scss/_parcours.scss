@@ -192,6 +192,28 @@
         line-height: 1.6;
         margin: 0;
     }
+
+    ul {
+        list-style: none;
+        font-size: 0.9rem;
+        color: $text-color;
+        line-height: 1.6;
+        margin-top: 0.75rem;
+        margin-bottom: 0;
+        padding-left: 0;
+
+        li {
+            position: relative;
+            padding-left: 1.2rem;
+
+            &::before {
+                content: '→';
+                position: absolute;
+                left: 0;
+                color: #ff4f1f;
+            }
+        }
+    }
 }
 
 .parcours-infos-title {
