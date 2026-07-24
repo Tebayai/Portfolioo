@@ -32,6 +32,18 @@ document.addEventListener('DOMContentLoaded', function() {
             if (button.getAttribute('data-tab') === tabName) {
                 button.classList.add('active');
             }
+            
+            // Update number and icon styling
+            const numberElement = button.querySelector('.number-projets');
+            const iconElement = button.querySelector('i');
+            
+            if (button.getAttribute('data-tab') === tabName) {
+                if (numberElement) numberElement.classList.add('active');
+                if (iconElement) iconElement.classList.add('active');
+            } else {
+                if (numberElement) numberElement.classList.remove('active');
+                if (iconElement) iconElement.classList.remove('active');
+            }
         });
     }
 });
