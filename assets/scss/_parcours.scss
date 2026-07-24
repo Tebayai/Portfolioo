@@ -1,0 +1,242 @@
+.parcours-container {
+    margin-top: 3rem;
+}
+
+.parcours-infos-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.parcours-timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+    padding: 2rem 0;
+
+    // Ligne centrale
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(180deg, #ff4f1f 0%, #ff4f1f 50%, #ddd 100%);
+        transform: translateX(-50%);
+        
+        @media (max-width: 768px) {
+            left: 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 60px;
+    }
+}
+
+.timeline-center {
+    display: none;
+}
+
+.timeline-line {
+    display: none;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 0;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            left: -48px;
+            top: 30px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border: 3px solid #ff4f1f;
+            border-radius: 50%;
+            z-index: 2;
+        }
+    }
+
+    // Icône au centre
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 16px;
+        height: 16px;
+        background: #ff4f1f;
+        border-radius: 50%;
+        border: 3px solid white;
+        z-index: 2;
+        box-shadow: 0 0 0 1px #ddd;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &.left {
+        .timeline-card {
+            grid-column: 1;
+            text-align: right;
+        }
+
+        @media (max-width: 768px) {
+            .timeline-card {
+                grid-column: 1;
+                text-align: left;
+            }
+        }
+    }
+
+    &.right {
+        .timeline-card {
+            grid-column: 3;
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            .timeline-card {
+                grid-column: 1;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.timeline-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        transform: translateY(-4px);
+        border-color: #ff4f1f;
+    }
+
+    .timeline-year {
+        font-family: $font-submain;
+        font-size: 0.85rem;
+        color: $text-color;
+        text-transform: uppercase;
+        display: inline-block;
+        background: #f0f0f0;
+        padding: 4px 10px;
+        border-radius: 20px;
+        margin-bottom: 0.5rem;
+    }
+
+    .timeline-label {
+        font-family: $font-submain;
+        font-size: 0.85rem;
+        color: #ff4f1f;
+        text-transform: uppercase;
+        font-weight: 600;
+        display: inline-block;
+        margin-left: 0.5rem;
+        background: rgba(#ff4f1f, 0.1);
+        padding: 4px 10px;
+        border-radius: 20px;
+        margin-bottom: 0.75rem;
+    }
+
+    h3 {
+        font-family: $font-title;
+        font-size: 1.1rem;
+        color: black;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .timeline-highlight {
+        color: #ff4f1f;
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        color: $text-color;
+        line-height: 1.6;
+        margin: 0;
+    }
+}
+
+.parcours-infos-title {
+    h2 {
+        font-family: $font-title;
+        font-size: 2.5rem;
+        line-height: 1;
+        color: black;
+        
+        @media (min-width: 768px) {
+            font-size: 3rem;
+        }
+    }
+
+    .subtitle {
+        font-family: $font-submain;
+        font-size: 0.8rem;
+        color: $text-color;
+        text-transform: uppercase;
+    }
+}
+
+.title-parcours {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1 {
+        font-family: $font-title;
+        font-size: 2.5rem;
+        line-height: 1;
+        color: black;
+        
+        @media (min-width: 768px) {
+            font-size: 3rem;
+        }
+    }
+
+    .subtitle {
+        font-family: $font-submain;
+        font-size: 0.8rem;
+        color: $text-color;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: $text-color;
+        font-size: 0.95rem;
+        margin-top: 1rem;
+    }
+}
+
+.underline {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
